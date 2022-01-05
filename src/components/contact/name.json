@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_contact_names",
+  "info": {
+    "displayName": "Name",
+    "icon": "user-circle"
+  },
+  "options": {},
+  "attributes": {
+    "fname": {
+      "type": "string",
+      "required": true
+    },
+    "lname": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

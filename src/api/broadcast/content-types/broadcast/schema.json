@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "broadcasts",
+  "info": {
+    "singularName": "broadcast",
+    "pluralName": "broadcasts",
+    "displayName": "Broadcast",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Message": {
+      "type": "richtext",
+      "required": true
+    },
+    "Name": {
+      "displayName": "Name",
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.name"
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "StartPubDate": {
+      "type": "date",
+      "required": true
+    },
+    "EndPubDate": {
+      "type": "date",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category",
+      "inversedBy": "broadcast"
+    },
+    "audiences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::audience.audience",
+      "mappedBy": "broadcast"
+    }
+  }
+}

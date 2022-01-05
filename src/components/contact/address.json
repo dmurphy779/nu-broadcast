@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_addresses",
+  "info": {
+    "displayName": "Address",
+    "icon": "home"
+  },
+  "options": {},
+  "attributes": {
+    "street": {
+      "type": "string"
+    },
+    "suite": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    }
+  }
+}
