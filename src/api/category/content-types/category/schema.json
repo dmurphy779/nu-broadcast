@@ -17,9 +17,9 @@
       "required": true,
       "unique": true
     },
-    "broadcast": {
+    "broadcasts": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::broadcast.broadcast",
       "mappedBy": "category"
     }

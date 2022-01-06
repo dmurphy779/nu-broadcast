@@ -48,9 +48,9 @@
     },
     "category": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "broadcast"
+      "inversedBy": "broadcasts"
     },
     "audiences": {
       "type": "relation",
