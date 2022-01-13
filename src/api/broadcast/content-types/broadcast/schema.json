@@ -51,12 +51,6 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "broadcasts"
-    },
-    "audiences": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::audience.audience",
-      "mappedBy": "broadcast"
     }
   }
 }
