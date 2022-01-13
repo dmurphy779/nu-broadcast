@@ -8,14 +8,15 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "Category": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "default": "General"
     },
     "broadcasts": {
       "type": "relation",

@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -60,7 +60,8 @@
     },
     "approved": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "required": false
     }
   }
 }
