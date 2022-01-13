@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audiences",
+  "info": {
+    "singularName": "audience",
+    "pluralName": "audiences",
+    "displayName": "Audience",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Audience": {
+      "type": "string",
+      "required": true
+    },
+    "broadcast": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::broadcast.broadcast",
+      "inversedBy": "audiences"
+    }
+  }
+}
