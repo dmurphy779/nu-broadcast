@@ -57,6 +57,11 @@
       "relation": "oneToMany",
       "target": "api::audience.audience",
       "mappedBy": "broadcast"
+    },
+    "admin_approved": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }
