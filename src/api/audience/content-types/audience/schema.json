@@ -16,11 +16,11 @@
       "type": "string",
       "required": true
     },
-    "broadcast": {
+    "broadcasts": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::broadcast.broadcast",
-      "inversedBy": "audiences"
+      "mappedBy": "audiences"
     }
   }
 }

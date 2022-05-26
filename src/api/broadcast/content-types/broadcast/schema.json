@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
@@ -18,16 +18,6 @@
     },
     "Message": {
       "type": "richtext",
-      "required": true
-    },
-    "Name": {
-      "displayName": "Name",
-      "type": "component",
-      "repeatable": false,
-      "component": "contact.name"
-    },
-    "Email": {
-      "type": "email",
       "required": true
     },
     "StartPubDate": {
@@ -54,14 +44,35 @@
     },
     "audiences": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::audience.audience",
-      "mappedBy": "broadcast"
+      "inversedBy": "broadcasts",
+      "required": true
     },
-    "approved": {
-      "type": "boolean",
-      "default": false,
-      "required": false
+    "SortOrder": {
+      "unique": false,
+      "required": true,
+      "type": "integer"
+    },
+    "ctaLink": {
+      "displayName": "CTA Link",
+      "type": "component",
+      "repeatable": false,
+      "component": "url.cta-link"
+    },
+    "author": {
+      "type": "string"
+    },
+    "FileAttachment": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

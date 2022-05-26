@@ -23,6 +23,10 @@
       "relation": "oneToMany",
       "target": "api::broadcast.broadcast",
       "mappedBy": "category"
+    },
+    "SortOrder": {
+      "unique": false,
+      "type": "integer"
     }
   }
 }

@@ -11,6 +11,10 @@ module.exports = ({env}) => ({
           Bucket: env('AWS_BUCKET_NAME'),
         },
       },
+      breakpoints: {
+        medium: 600,
+        small: 200,
+      },
     },
   },
   // ...

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_url_cta_links",
+  "info": {
+    "displayName": "CTA Link",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "linkText": {
+      "type": "string",
+      "default": "Learn More"
+    },
+    "linkURL": {
+      "type": "string"
+    }
+  }
+}

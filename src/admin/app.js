@@ -1,5 +1,14 @@
+import AuthLogo from './extensions/login-logo.png';
+import MenuLogo from './extensions/menu-logo.png';
+
 export default {
   config: {
+    auth: {
+      logo: AuthLogo
+    },
+    menu: {
+      logo: MenuLogo
+    },
     locales: [
       // 'ar',
       'fr',
@@ -29,5 +38,6 @@ export default {
       // 'zh',
     ],
   },
-  bootstrap() {},
+  bootstrap() {
+  },
 };
