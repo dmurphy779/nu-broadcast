@@ -9,6 +9,13 @@ export default {
     menu: {
       logo: MenuLogo
     },
+    translations: {
+      en: {
+        "Auth.form.welcome.title" : "Jet Broadcast",
+        "Auth.form.welcome.subtitle": "Log in to your account",
+        "app.components.LeftMenu.navbrand.title": "Jet Broadcast Dashboard",
+      },
+    },
     locales: [
       // 'ar',
       'fr',
